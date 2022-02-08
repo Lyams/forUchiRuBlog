@@ -1,4 +1,9 @@
+[![CI](https://github.com/Lyams/forUchiRuBlog/actions/workflows/ci.yml/badge.svg)](https://github.com/Lyams/forUchiRuBlog/actions/workflows/ci.yml)
+[![Test Coverage](https://codecov.io/gh/lyams/forUchiRuBlog/graph/badge.svg)](https://codecov.io/gh/lyams/forUchiRuBlog)
+
 # README
+
+
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
