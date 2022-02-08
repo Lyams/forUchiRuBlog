@@ -57,6 +57,10 @@ group :development, :test do
   # Security tools
   gem 'brakeman', '~> 5.2', '>= 5.2.1'
   gem 'bundler-audit', '~> 0.9.0.1'
+  # RuboCop is a Ruby static code analyzer
+  gem 'rubocop', '~> 1.22', require: false
+  gem 'rubocop-performance', '~> 1.11', require: false
+  gem 'rubocop-rails', '~> 2.12', require: false
 end
 
 group :development do
