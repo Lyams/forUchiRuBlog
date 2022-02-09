@@ -21,4 +21,11 @@ RSpec.describe Comment, type: :model do
       expect(comment).to be_invalid
     end
   end
+
+  describe 'database: column specification' do
+    it { is_expected.to have_db_column(:id).of_type(:uuid).with_options(primary: true).with_options(null: false) }
+    it { is_expected.to have_db_column(:message).of_type(:text).with_options(null: false) }
+    it { is_expected.to have_db_index(['post_id']) }
+    it { is_expected.to have_db_column(:post_id).of_type(:uuid).with_options(null: false) }
+  end
 end
