@@ -4,6 +4,19 @@ require:
 
 AllCops:
   NewCops: enable
+  Exclude:
+    - 'bin/*'
+    - 'db/schema.rb'
+    - 'db/migrate/*'
+    - 'log/**/*'
+    - 'public/**/*'
+    - 'tmp/**/*'
+    - 'config/initializers/*'
+    - 'vendor/**/*'
+    - 'spec/**/*'
 
 Style/Documentation:
+  Enabled: false
+
+Style/EmptyMethod:
   Enabled: false
