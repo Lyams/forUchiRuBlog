@@ -1,37 +1,23 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/ilya/opiti/ruby/forUchiRuBlog/spec/controllers/posts_controllers_spec.rb": {
+      "/home/ilya/opiti/ruby/forUchiRuBlog/spec/controllers/comments_controllers_spec.rb": {
         "lines": [
-          null,
-          null,
           1,
           null,
-          1,
-          2,
-          null,
-          1,
-          2,
-          2,
-          1,
-          1,
           1,
           null,
           null,
           null,
-          1,
-          2,
-          1,
-          1,
-          1,
           null,
           null,
           null,
-          1,
-          2,
-          1,
-          1,
-          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null,
           null
@@ -398,10 +384,20 @@
           1,
           1,
           1,
+          null,
+          1,
           null
         ]
       },
       "/home/ilya/opiti/ruby/forUchiRuBlog/app/helpers/application_helper.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/ilya/opiti/ruby/forUchiRuBlog/app/helpers/comments_helper.rb": {
         "lines": [
           null,
           null,
@@ -436,6 +432,69 @@
           null
         ]
       },
+      "/home/ilya/opiti/ruby/forUchiRuBlog/app/controllers/comments_controller.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          1,
+          0,
+          0,
+          0,
+          null,
+          null,
+          1,
+          null,
+          1,
+          0,
+          null,
+          null
+        ]
+      },
+      "/home/ilya/opiti/ruby/forUchiRuBlog/app/controllers/application_controller.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null
+        ]
+      },
+      "/home/ilya/opiti/ruby/forUchiRuBlog/spec/controllers/posts_controllers_spec.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
+          2,
+          null,
+          1,
+          2,
+          2,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          2,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          1,
+          2,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null
+        ]
+      },
       "/home/ilya/opiti/ruby/forUchiRuBlog/app/controllers/posts_controller.rb": {
         "lines": [
           null,
@@ -449,6 +508,8 @@
           null,
           null,
           null,
+          1,
+          1,
           1,
           null,
           null,
@@ -513,14 +574,22 @@
           null
         ]
       },
-      "/home/ilya/opiti/ruby/forUchiRuBlog/app/controllers/application_controller.rb": {
+      "/home/ilya/opiti/ruby/forUchiRuBlog/spec/helpers/comments_helper_spec.rb": {
         "lines": [
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null,
           1,
           1,
-          0,
-          null,
           null
         ]
       },
@@ -603,6 +672,17 @@
           2,
           2,
           2,
+          null,
+          null
+        ]
+      },
+      "/home/ilya/opiti/ruby/forUchiRuBlog/spec/requests/comments_spec.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          1,
+          1,
           null,
           null
         ]
@@ -785,6 +865,6 @@
         ]
       }
     },
-    "timestamp": 1644434502
+    "timestamp": 1644439917
   }
 }

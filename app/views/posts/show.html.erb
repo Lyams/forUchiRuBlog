@@ -1,4 +1,4 @@
-<div class="mx-auto md:w-2/3 w-full flex">
+<div class="mx-auto w-full flex">
   <div class="mx-auto">
     <% if notice.present? %>
       <p class="py-2 px-3 bg-green-50 mb-5 text-green-500 font-medium rounded-lg inline-block" id="notice"><%= notice %></p>
@@ -12,4 +12,14 @@
     </div>
     <%= link_to 'Back to posts', posts_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
   </div>
+</div>
+<div class="mx-auto">
+  <% @comments.each do |comment| %>
+    <div class="text-xl font-small text-black-100">
+      <p> Comment created: <%= comment.created_at.strftime("%Y-%m-%d") %> </p>
+      <p> <%= comment.message %></p>
+    </div>
+    </br>
+  <% end %>
+  <%= render 'comments/comments_form', post: @post, comment: @comment %>
 </div>
