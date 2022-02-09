@@ -1,3 +1,3 @@
-web: bin/rake db:migrate
+release: bin/rake db:migrate
 web: bin/rails server -p 3000
 css: bin/rails tailwindcss:watch
