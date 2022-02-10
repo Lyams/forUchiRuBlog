@@ -36,4 +36,22 @@ RSpec.describe PostsController, type: :controller do
       is_expected.to redirect_to assigns(:post)
     end
   end
+
+  describe 'GET#edit' do
+    subject { process :edit, method: :get, params: {id: post.id} }
+    it 'created post' do
+      is_expected.to render_template :edit
+      expect{ subject }.to_not change { Post.count }
+      expect(assigns :post).to eq post
+    end
+  end
+
+  describe '#destroy' do
+    let!(:new_post){create :post}
+    subject { delete :destroy, params: {id: new_post} }
+    it 'destroys Post record' do
+      expect { subject }.to change { Post.count }.by(-1)
+      expect(response).to redirect_to posts_url
+    end
+  end
 end
