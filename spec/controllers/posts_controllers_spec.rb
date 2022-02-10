@@ -1,5 +1,4 @@
 # frozen_string_literal: true
-
 require 'rails_helper'
 
 RSpec.describe PostsController, type: :controller do
@@ -27,6 +26,14 @@ RSpec.describe PostsController, type: :controller do
     it 'render new view' do
       expect(assigns(:post)).to be_a_new(Post)
       expect(response).to render_template :new
+    end
+  end
+
+  describe 'GET#create' do
+    subject { process :create, method: :post, params: { post: attributes_for(:post) } }
+    it 'created post' do
+      expect { subject }.to change { Post.count }.by(1)
+      is_expected.to redirect_to assigns(:post)
     end
   end
 end
