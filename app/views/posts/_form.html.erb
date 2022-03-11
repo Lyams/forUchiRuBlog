@@ -1,3 +1,4 @@
+<%= turbo_frame_tag post do%>
 <%= form_with(model: post, class: "contents") do |form| %>
   <% if post.errors.any? %>
     <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
@@ -24,4 +25,5 @@
   <div class="inline">
     <%= form.submit class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
   </div>
+<% end %>
 <% end %>
